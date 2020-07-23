@@ -1,0 +1,59 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.Home .btn {
+  background-color: #313b5f;
+  margin-top: 30px;
+}
+
+.Home p {
+  font-size: 20px;
+  animation: first 1s ease-in-out;
+}
+
+.Home h3 {
+  font-size: 30px;
+  animation: second 1s ease-in-out;
+}
+
+.Home h3 span {
+  font-size: 40px;
+  color: #2dc5e7;
+  font-weight: 700;
+}
+
+@keyframes first {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  90% {
+    transform: translateX(30px);
+    font-style: italic;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes second {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  90% {
+    transform: translateX(-30px);
+    font-style: italic;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
