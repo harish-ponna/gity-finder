@@ -67,7 +67,7 @@ function Search(props) {
               </div>
             ))
           ) : (
-            <h1 className="no-results">No Results</h1>
+            <h1 className="no-results">Loading...</h1>
           )}
         </div>
       )}
