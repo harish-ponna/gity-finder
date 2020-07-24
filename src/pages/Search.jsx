@@ -22,7 +22,7 @@ function Search(props) {
   useEffect(() => {
     if (!q) return;
     SET_SEARCH_RESULTS(q);
-  }, [q]);
+  }, [SET_SEARCH_RESULTS, q]);
 
   const [query, setQuery] = useState("");
 
