@@ -20,6 +20,7 @@
   padding-left: 10px;
   color: white;
   letter-spacing: 0.5px;
+  border-radius: 5px;
 }
 
 .Search input[type="submit"] {
@@ -45,8 +46,8 @@
   justify-content: center;
 }
 .clear-box .clear-btn {
-  width: 350px;
-  background-color: #313b5f;
+  width: 340px;
+  background-color: #d93636;
   border: none;
   outline: none;
   color: white;

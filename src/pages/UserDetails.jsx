@@ -20,6 +20,9 @@ function UserDetails(props) {
   }, [userName]);
   return (
     <div className="UserDetails">
+      <button class="back" onClick={() => props.history.goBack()}>
+        Back
+      </button>
       {userRepos.length !== 0 ? (
         <div className="user">
           <div className="image">

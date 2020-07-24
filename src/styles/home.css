@@ -10,7 +10,9 @@
   background-color: #313b5f;
   margin-top: 30px;
 }
-
+.Home .btn:focus {
+  outline: none;
+}
 .Home p {
   font-size: 20px;
   animation: first 1s ease-in-out;
