@@ -43,8 +43,8 @@ function Search(props) {
         />
         <input type="submit" value="Search" />
       </form>
-      <div className="clear-box">
-        <button
+      {searchResults.length !== 0 &&<div className="clear-box">
+ <button
           onClick={() => {
             REMOVE_SEARCH_RESULTS();
             push("/search");
@@ -52,8 +52,9 @@ function Search(props) {
           className="clear-btn"
         >
           Clear
-        </button>
-      </div>
+        </button></div>}
+        
+      
       {q && (
         <div className="results">
           {searchResults.length !== 0 ? (
