@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link, withRouter } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { reduxState } from "../Redux/mapStateToProps";
 import { SET_USER_DETAILS, SET_USER_REPOS } from "../Redux/actionCreators";
@@ -12,15 +12,15 @@ function UserDetails(props) {
     },
     SET_USER_DETAILS,
     SET_USER_REPOS,
-    reduxState: { userDetails, userRepos }
+    reduxState: { userRepos }
   } = props;
   useEffect(() => {
     SET_USER_DETAILS(userName);
     SET_USER_REPOS(userName);
-  }, [userName]);
+  }, [SET_USER_DETAILS, SET_USER_REPOS, userName]);
   return (
     <div className="UserDetails">
-      <button class="back" onClick={() => props.history.goBack()}>
+      <button className="back" onClick={() => props.history.goBack()}>
         Back
       </button>
       {userRepos.length !== 0 ? (
