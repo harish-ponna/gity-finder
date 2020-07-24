@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Link, withRouter } from "react-router-dom";
-import { connect } from "react-redux";
+import React from "react";
+import { withRouter } from "react-router-dom";
 import "../styles/About.css";
 function About(props) {
   return (
