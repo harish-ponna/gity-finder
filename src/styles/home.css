@@ -9,6 +9,8 @@
 .Home .btn {
   background-color: #313b5f;
   margin-top: 30px;
+  margin-bottom: 50px;
+  animation: third 1s ease-in-out;
 }
 .Home .btn:focus {
   outline: none;
@@ -56,6 +58,20 @@
 
   100% {
     transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes third {
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
     opacity: 1;
   }
 }
