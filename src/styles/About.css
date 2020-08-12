@@ -1,6 +1,6 @@
 .About {
   min-height: 50vh;
-  margin: 0 50px;
+  margin: 0 auto;
   max-width: 900px;
   display: flex;
   flex-direction: column;
